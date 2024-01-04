@@ -78,6 +78,21 @@ console.log ('////////////////////////')
     )
     console.log ('////////////////////////')
 
+    // kabisat
+    for(let tahunAwal = 1600; tahunAwal <= 2024; tahunAwal++){
+            if(tahunAwal%400 == 0){
+                console.log(`Tahun ${tahunAwal} Merupakan Tahun Kabisat`)
+            }
+            else if(tahunAwal%400 == 0 || tahunAwal%100 != 0 && tahunAwal%4 == 0){
+                console.log(`Tahun ${tahunAwal} Merupakan Tahun Kabisat`)
+            }
+            else if (tahunAwal%400 != 0 && tahunAwal%100 == 0){
+                console.log(`Tahun ${tahunAwal} Bukan Merupakan Tahun Kabisat`)
+            }
+            else {
+                console.log(`Tahun ${tahunAwal} Bukan Merupakan Tahun Kabisat`)
+            }
+        }
     </script>
 </body>
 </html>
